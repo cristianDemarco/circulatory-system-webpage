@@ -1,0 +1,177 @@
+/* Stile di base per il corpo */
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+/* Stile del titolo */
+header h1 {
+  font-family: 'Roboto', sans-serif; /* Apply custom font */
+  font-size: 3rem; /* Larger title */
+  letter-spacing: 2px;
+  font-weight: 700; /* Bold text */
+}
+
+/* Navbar Style - Full Screen Width, Black & Grey Color Scheme */
+.navbar {
+  background-color: #212121; /* Dark background */
+  border-bottom: 1px solid #333;
+  width: 100%; /* Full width */
+}
+
+.navbar .navbar-brand {
+  font-size: 2rem; /* Larger brand text */
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase; /* Add uppercased text */
+}
+
+.navbar-nav .nav-link {
+  color: #bbb;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  /* Remove hover effect */
+}
+
+/* Navbar Items Styling */
+.navbar-nav .nav-item {
+  margin-right: 50px;
+  margin-left: 40px; 
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: transparent; /* Remove hover effect */
+  color: #bbb; /* Keep the color consistent */
+}
+
+/* Stile delle card */
+.card {
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 15px;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Apply shadow directly to the card */
+}
+
+/* Card Image Styling */
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+/* Card Body Styling */
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Card Text Styling */
+.card-text {
+  color: #dddddd;
+  transition: color 0.3s ease;
+}
+
+/* Effetti hover con box-shadow lungo tutto il bordo della card */
+.card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+/* Specific colors for each card when hovered (light glow effect matching text color) */
+#card1:hover {
+  box-shadow: 0 0 20px rgba(255, 87, 34, 0.9); /* Orange glow */
+}
+
+#card2:hover {
+  box-shadow: 0 0 20px rgba(33, 150, 243, 0.9); /* Blue glow */
+}
+
+#card3:hover {
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.9); /* Green glow */
+}
+
+#card4:hover {
+  box-shadow: 0 0 20px rgba(156, 39, 176, 0.9); /* Purple glow */
+}
+
+#card5:hover {
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.9); /* Yellow glow */
+}
+
+/* Text color matches the light color of each card on hover */
+#card1:hover .card-text {
+  color: rgba(255, 87, 34, 0.9); /* Orange text */
+}
+
+#card2:hover .card-text {
+  color: rgba(33, 150, 243, 0.9); /* Blue text */
+}
+
+#card3:hover .card-text {
+  color: rgba(76, 175, 80, 0.9); /* Green text */
+}
+
+#card4:hover .card-text {
+  color: rgba(156, 39, 176, 0.9); /* Purple text */
+}
+
+#card5:hover .card-text {
+  color: rgba(255, 193, 7, 0.9); /* Yellow text */
+}
+
+/* Button customization */
+.custom-btn {
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-btn:hover {
+  background-color: #f0a500; /* Hover color for button */
+  border-color: #f0a500; /* Optional: change border color */
+  color: #fff; /* Optional: change text color */
+}
+
+/* Stile del titolo */
+header {
+  padding-top: 5rem; /* Increase padding to give space for the title */
+  padding-bottom: 3rem; /* Add space below the title */
+  background-color: #333; /* Dark background for header */
+}
+
+header h1 {
+  font-size: 3rem; /* Larger title */
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+}
+
+/* Stile responsive */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
