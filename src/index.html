@@ -6,50 +6,19 @@
     <title>Apparato cardiocircolatorio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="pages/header/header.css">
     <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-5">
-        <h1 class="display-4">L'APPARATO CARDIOCIRCOLATORIO</h1>
-    </header>
-
-    <!-- Navbar (full width after title) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Center navbar items -->
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#card1">Organi e Strutture</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#card2">Funzioni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#card3">Grande e piccola circolazione</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#card4">Patologie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#card5">Sport</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
+    <div id="header-placeholder"></div>
 
     <main class="container py-5">
         <div class="row g-4 justify-content-center">
             <!-- Card 1 -->
             <div id="card1" class="col-md-4 col-sm-6">
                 <div class="card shadow-sm custom-card">
-                    <a href="example.html" class="text-decoration-none">
+                    <a href="pages/organs.html" class="text-decoration-none">
                         <img src="assets/heart.jpg" class="card-img-top mx-auto d-block" alt="Immagine 1">
                         <div class="card-body text-center">
                             <p class="card-text">Didascalia 1</p>
@@ -61,7 +30,7 @@
             <!-- Card 2 -->
             <div id="card2" class="col-md-4 col-sm-6">
                 <div class="card shadow-sm custom-card">
-                    <a href="example.html" class="text-decoration-none">
+                    <a href="pages/functions.html" class="text-decoration-none">
                         <img src="assets/circulation.webp" class="card-img-top mx-auto d-block" alt="Immagine 2">
                         <div class="card-body text-center">
                             <p class="card-text">Didascalia 2</p>
@@ -73,7 +42,7 @@
             <!-- Card 3 -->
             <div id="card3" class="col-md-4 col-sm-6">
                 <div class="card shadow-sm custom-card">
-                    <a href="example.html" class="text-decoration-none">
+                    <a href="pages/circolation.html" class="text-decoration-none">
                         <img src="assets/blood.jpg" class="card-img-top mx-auto d-block" alt="Immagine 3">
                         <div class="card-body text-center">
                             <p class="card-text">Didascalia 3</p>
@@ -85,7 +54,7 @@
             <!-- Card 4 -->
             <div id="card4" class="col-md-4 col-sm-6">
                 <div class="card shadow-sm custom-card">
-                    <a href="example.html" class="text-decoration-none">
+                    <a href="pages/patology.html" class="text-decoration-none">
                         <img src="assets/heart-patology.webp" class="card-img-top mx-auto d-block" alt="Immagine 4">
                         <div class="card-body text-center">
                             <p class="card-text">Didascalia 4</p>
@@ -97,7 +66,7 @@
             <!-- Card 5 -->
             <div id="card5" class="col-md-4 col-sm-6">
                 <div class="card shadow-sm custom-card">
-                    <a href="example.html" class="text-decoration-none">
+                    <a href="pages/sport.html" class="text-decoration-none">
                         <img src="assets/heart-frequency.avif" class="card-img-top mx-auto d-block" alt="Immagine 5">
                         <div class="card-body text-center">
                             <p class="card-text">Didascalia 5</p>
@@ -107,11 +76,24 @@
             </div>
         </div>
     </main>
-
-    <footer class="text-center text-light bg-dark py-3">
-        <p>© 2024 Creato da Demarco Cristian</p>
-    </footer>
-
+    
+    <script>
+        // Dynamically load the header
+        fetch('pages/header/header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load header');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading header:', error);
+            });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

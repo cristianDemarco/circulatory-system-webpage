@@ -1,0 +1,75 @@
+header {
+    padding-top: 5rem; /* Increase padding to give space for the title */
+    padding-bottom: 3rem; /* Add space below the title */
+    background-color: #333; /* Dark background for header */
+}
+
+header h1 {
+    font-size: 3rem; /* Larger title */
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif; /* Apply custom font */
+    font-size: 3rem; /* Larger title */
+    letter-spacing: 2px;
+    font-weight: 700; /* Bold text */
+}
+
+.navbar {
+    background-color: #212121; /* Dark background */
+    border-bottom: 1px solid #333;
+    width: 100%; /* Full width */
+}
+
+.navbar .navbar-brand {
+    font-size: 2rem; /* Larger brand text */
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase; /* Add uppercased text */
+}
+
+.navbar-nav .nav-link {
+    color: #bbb;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 20px; /* Remove hover effect */
+}
+
+/* Navbar Items Styling */
+.navbar-nav .nav-item {
+    margin-right: 50px;
+    margin-left: 40px; 
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: transparent; /* Remove hover effect */
+    color: #bbb; /* Keep the color consistent */
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 1rem;
+    }
+  
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  }
