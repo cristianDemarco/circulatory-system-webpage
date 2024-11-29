@@ -1,42 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page with Header</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Patologie Cardiovascolari</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="header/header.css">
 </head>
-<body>
-    <!-- Placeholder for the imported header -->
-    <div id="header-placeholder"></div>
-    
-    <!-- Blank space for content -->
-    <main class="container py-5">
-        <div class="content-placeholder text-center">
-            <h2>Welcome!</h2>
-            <p>Content goes here.</p>
-            <!-- Add more content later -->
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-dark">Patologie Cardiovascolari</h1>
+            <p class="lead text-muted">
+                Le patologie legate al sistema cardiocircolatorio attraverso una timeline interattiva.
+            </p>
         </div>
-    </main>
-    
-    <script>
-        // Dynamically load the header
-        fetch('header/header.html')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to load header');
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Error loading header:', error);
-            });
-    </script>
+
+        <div class="d-flex flex-column align-items-center position-relative">
+
+            <div class="d-flex align-items-center mb-5 w-100">
+                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center me-4" style="width: 50px; height: 50px;">
+                    1
+                </div>
+                <div class="card shadow w-75">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../assets/infart.jpg" class="img-fluid rounded-start" alt="Infarto">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Infarto del Miocardio</h5>
+                                <p class="card-text">
+                                    L'<strong>infarto del miocardio</strong> si verifica quando il flusso sanguigno diretto al cuore viene bloccato, solitamente a causa di un coagulo di sangue o di una placca nelle arterie coronarie. 
+                                    Questo evento causa danni irreversibili alle cellule del muscolo cardiaco, con conseguenze gravi come aritmie o insufficienza cardiaca.
+                                </p>
+                                <p class="card-text">
+                                    Sintomi tipici includono dolore toracico intenso, difficoltà respiratorie e sudorazione eccessiva. È fondamentale intervenire tempestivamente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elemento della timeline 2 -->
+            <div class="d-flex align-items-center mb-5 w-100">
+                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center me-4" style="width: 50px; height: 50px;">
+                    2
+                </div>
+                <div class="card shadow w-75">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../assets/ictus.webp" class="img-fluid rounded-start" alt="Ictus">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Ictus</h5>
+                                <p class="card-text">
+                                    L'<strong>ictus</strong> è un'emergenza medica che si verifica quando l'afflusso di sangue a una parte del cervello viene interrotto, causando la morte delle cellule cerebrali. 
+                                    Può essere ischemico (blocco di un vaso sanguigno) o emorragico (rottura di un vaso).
+                                </p>
+                                <p class="card-text">
+                                    I sintomi includono improvvisa debolezza a un lato del corpo, difficoltà nel parlare e perdita della vista. 
+                                    Intervenire entro poche ore è cruciale per ridurre i danni neurologici.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elemento della timeline 3 -->
+            <div class="d-flex align-items-center mb-5 w-100">
+                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center me-4" style="width: 50px; height: 50px;">
+                    3
+                </div>
+                <div class="card shadow w-75">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../assets/blood-pressure.jpg" class="img-fluid rounded-start" alt="Ipertensione">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Ipertensione Arteriosa</h5>
+                                <p class="card-text">
+                                    L'<strong>ipertensione arteriosa</strong> è una condizione cronica caratterizzata da un'elevata pressione sanguigna nelle arterie. 
+                                    Spesso asintomatica, questa patologia può causare danni gravi nel tempo, come insufficienza renale, infarto e ictus.
+                                </p>
+                                <p class="card-text">
+                                    È fondamentale monitorare la pressione e adottare uno stile di vita sano, includendo una dieta equilibrata, attività fisica regolare e, se necessario, farmaci prescritti dal medico.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
