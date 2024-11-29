@@ -1,42 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page with Header</title>
+    <title>Apparato Cardiocircolatorio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="header/header.css">
 </head>
-<body>
-    <!-- Placeholder for the imported header -->
-    <div id="header-placeholder"></div>
-    
-    <!-- Blank space for content -->
-    <main class="container py-5">
-        <div class="content-placeholder text-center">
-            <h2>Welcome!</h2>
-            <p>Content goes here.</p>
-            <!-- Add more content later -->
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 text-center">
+                <h1 class="display-4 fw-bold">L'Attività Fisica</h1>
+                <p class="lead text-muted mb-4">
+                    L'attività fisica regolare è fondamentale per la salute cardiovascolare.
+                </p>
+            </div>
         </div>
-    </main>
-    
-    <script>
-        // Dynamically load the header
-        fetch('header/header.html')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to load header');
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Error loading header:', error);
-            });
-    </script>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Miglioramento della Circolazione Sanguigna</h5>
+                        <p class="card-text">
+                            L'attività fisica aumenta la capacità del cuore di pompare il sangue, migliorando il flusso sanguigno verso tutti gli organi e tessuti.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Rafforzamento del Cuore</h5>
+                        <p class="card-text">
+                            L'esercizio fisico regolare rafforza il muscolo cardiaco, permettendo al cuore di lavorare in modo più efficiente, riducendo il rischio di malattie cardiovascolari.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Controllo della Pressione Arteriosa</h5>
+                        <p class="card-text">
+                            L'attività fisica aiuta a mantenere la pressione arteriosa sotto controllo, riducendo il rischio di ipertensione e migliorando la salute generale del sistema cardiocircolatorio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Prevenzione dell'Obesità</h5>
+                        <p class="card-text">
+                            L'esercizio fisico è un alleato importante nel mantenere il peso corporeo sotto controllo, contribuendo a prevenire malattie legate all'obesità come il diabete e le malattie cardiache.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

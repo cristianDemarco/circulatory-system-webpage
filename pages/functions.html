@@ -1,48 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apparato Cardiocircolatorio</title>
+    <title>Apparato Cardiocircolatorio - Funzioni</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="header/header.css">
 </head>
 <body class="bg-light">
-    <div id="header-placeholder"></div>
-    
-    <main class="container py-5">
-        <div class="row justify-content-center align-items-center text-center">
-            <div class="col-lg-8 col-md-10">
-                <h1 class="display-4 text-dark mb-4">Le funzioni</h1>
-                <hr>
-                <p class="lead text-muted mb-5">
-                    La funzione principale dell’apparato cardiocircolatorio, come detto, è quella di distribuire ossigeno e nutrienti ai veri organi associata a quella di eliminare l’anidride carbonica e le sostanze di scarto dall’organismo.
-                </p>
-                <p class="lead text-muted mb-5">
-                    Un’altra funzione è quella di distribuire, attraverso la fitta rete costituita dai vasi sangugini, i globuli bianchi, componenti fondamentali del sistema immunitario, e altre molecole come gli ormoni che svolgono varie funzioni nell’organismo.
-
-
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 text-center">
+                <h1 class="display-4 fw-bold text-dark">Le Funzioni</h1>
+                <p class="lead text-muted mb-4">
+                    L'apparato cardiocircolatorio ha un ruolo centrale nel mantenere il corretto funzionamento del corpo umano. Di seguito le principali funzioni:
                 </p>
             </div>
         </div>
-    </main>
-    
-    <script>
-        fetch('header/header.html')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to load header');
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Error loading header:', error);
-            });
-    </script>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Trasporto di Ossigeno e Nutrienti</h5>
+                        <p class="card-text">
+                            L'apparato cardiocircolatorio distribuisce ossigeno e nutrienti a tutti gli organi e tessuti del corpo, garantendo l'energia necessaria per il loro funzionamento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Eliminazione delle Sostanze di Scarto</h5>
+                        <p class="card-text">
+                            Permette di rimuovere anidride carbonica e prodotti di scarto metabolico, trasportandoli verso organi deputati alla loro eliminazione, come polmoni, fegato e reni.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Distribuzione degli Ormoni</h5>
+                        <p class="card-text">
+                            Attraverso il sangue, trasporta ormoni prodotti dalle ghiandole endocrine, regolando funzioni vitali come il metabolismo, la crescita e la riproduzione.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Difesa Immunitaria</h5>
+                        <p class="card-text">
+                            Trasporta globuli bianchi e altre molecole del sistema immunitario, proteggendo l'organismo da infezioni e malattie.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
